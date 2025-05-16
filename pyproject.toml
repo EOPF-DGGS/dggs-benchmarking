@@ -23,6 +23,7 @@ content-type = "text/markdown"
 [project.optional-dependencies]
 test = [
     "pytest",
+    "pytest-cov",
 ]
 
 
