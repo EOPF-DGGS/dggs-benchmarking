@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - dask-jobqueue
-  - dask-labextension
+  - toml
   - dask>=2.3
   - matplotlib
   - netcdf4
