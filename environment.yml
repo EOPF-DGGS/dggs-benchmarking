@@ -1,0 +1,15 @@
+name: dggs-benchmarking
+channels:
+  - conda-forge
+dependencies:
+  - dask-jobqueue
+  - toml
+  - dask>=2.3
+  - matplotlib
+  - netcdf4
+  - numpy
+  - pandas
+  - python
+  - scipy
+  - xarray>=0.12.3
+  - zarr
