@@ -19,9 +19,13 @@ isort = "*"
 ruff = "*"
 python = "3.12.*"
 jedi-language-server = "*"
+dask = ">=2025.7.0,<2026"
+dask-labextension = ">=7.0.0,<8"
+xdggs = ">=0.2.1,<0.3"
 
 [environments]
 ellipsoidal-healpix = ["ellipsoidal-healpix"]
+regridding = ["regridding"]
 
 [pypi-dependencies]
 healpix-geo = "*"
@@ -32,3 +36,9 @@ matplotlib = "*"
 seaborn = "*"
 evcxr = "*"
 fastparquet = ">=2024.11.0,<2025"
+
+[feature.regridding.dependencies]
+xarray = "*"
+cfgrib = "*"
+dask = "*"
+xesmf = "*"
