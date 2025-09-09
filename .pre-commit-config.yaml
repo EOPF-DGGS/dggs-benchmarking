@@ -45,7 +45,6 @@ repos:
       - id: nbstripout
         args:
           - "--extra-keys=metadata.kernelspec metadata.language_info.version"
-        exclude: "^[^/]*\\.ipynb$"
   - repo: https://github.com/adhtruong/mirrors-typos
     rev: v1.34.0
     hooks:
