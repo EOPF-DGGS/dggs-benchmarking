@@ -21,14 +21,15 @@ python = "3.12.*"
 jedi-language-server = "*"
 dask = ">=2025.7.0,<2026"
 dask-labextension = ">=7.0.0,<8"
-xdggs = ">=0.2.1,<0.3"
+
+[pypi-dependencies]
+healpix-geo = "*"
+xdggs = ">=0.2.2"
 
 [environments]
 ellipsoidal-healpix = ["ellipsoidal-healpix"]
 regridding = ["regridding"]
 
-[pypi-dependencies]
-healpix-geo = "*"
 
 [feature.ellipsoidal-healpix.dependencies]
 pandas = "*"
