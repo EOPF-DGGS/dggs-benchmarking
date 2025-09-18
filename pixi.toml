@@ -19,19 +19,19 @@ isort = "*"
 ruff = "*"
 python = "3.12.*"
 jedi-language-server = "*"
+dask = ">=2025.7.0,<2026"
+dask-labextension = ">=7.0.0,<8"
 ipykernel = ">=6.30.1,<7"
-xarray = ">=2025.9.0,<2026"
-zarr = ">=2,<3"
-pyproj = ">=3.7.2,<4"
-pystac-client = ">=0.9.0,<0.10"
-xarray-eopf = ">=0.2.0,<0.3"
-matplotlib-base = ">=3.10.3,<4"
-
-[environments]
-ellipsoidal-healpix = ["ellipsoidal-healpix"]
 
 [pypi-dependencies]
 healpix-geo = "*"
+xdggs = ">=0.2.2"
+
+[environments]
+ellipsoidal-healpix = ["ellipsoidal-healpix"]
+regridding = ["regridding"]
+eopf = ["eopf"]
+
 
 [feature.ellipsoidal-healpix.dependencies]
 pandas = "*"
@@ -39,3 +39,18 @@ matplotlib = "*"
 seaborn = "*"
 evcxr = "*"
 fastparquet = ">=2024.11.0,<2025"
+
+[feature.regridding.dependencies]
+xarray = "*"
+cfgrib = "*"
+dask = "*"
+xesmf = "*"
+zarr = ">=3.1.2,<4"
+
+[feature.eopf.dependencies]
+xarray-eopf = "*"
+xarray = "*"
+pyproj = "*"
+zarr = "<3"
+pystac-client = "*"
+matplotlib-base = "*"
